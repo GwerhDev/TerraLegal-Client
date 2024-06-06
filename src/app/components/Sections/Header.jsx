@@ -5,7 +5,7 @@ export const Header = () => {
     <header>
       <section className={s.container}>
         <span className={s.leftSection}>
-          <h1>TerraLegal SpA</h1>
+          <h1>Lorem Ipsum</h1>
         </span>
         <span className={s.rightSection}>
         </span>

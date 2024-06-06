@@ -8,6 +8,7 @@
 
 .header-container {
   width: 100vw;
+  min-height: 600px;
   display: flex;
   justify-content: center;
   background-image: url(../assets/images/avif/header-background.avif);

@@ -63,6 +63,8 @@ nav {
   align-items: center;
   justify-content: center;
   position: fixed;
+  background-color: #fefefe;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.239);
 }
 
 header {
@@ -86,7 +88,7 @@ main {
   overflow: hidden;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(254, 254, 254);
+  background-color: #fefefe;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.197);
 }
 
@@ -94,7 +96,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(254, 254, 254);
+  background-color: #fefefe;
 }
 
 h1 {
