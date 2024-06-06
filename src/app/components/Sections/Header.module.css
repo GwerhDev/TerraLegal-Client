@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.leftSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rightSection {
+  width: 100%;
+}

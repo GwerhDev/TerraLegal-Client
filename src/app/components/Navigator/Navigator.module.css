@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+}
+
+.innerContainer {
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.innerContainer section {
+  display: flex;
+  align-items: center;
+}
