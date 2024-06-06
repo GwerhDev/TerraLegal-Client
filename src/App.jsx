@@ -1,13 +1,12 @@
 import { Navigator } from "./app/components/Navigator/Navigator";
 import { Footer } from "./app/components/Sections/Footer";
-
-import Landing from "./app/pages/Landing";
+import { AppRouter } from "./app/router/AppRouter";
 
 export default function App() {
   return (
     <div className="app-container">
       <Navigator />
-      <Landing />
+      <AppRouter />
       <Footer />
     </div>
   )

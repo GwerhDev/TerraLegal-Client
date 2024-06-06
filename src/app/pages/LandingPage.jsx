@@ -2,7 +2,7 @@ import { Presentation } from "../components/Presentation/Presentation";
 import { Header } from "../components/Sections/Header";
 import { Services } from "../components/Services/Services";
 
-export default function Landing() {
+export default function LandingPage() {
   return (
     <div className="page-container">
       <div className="header-container">
