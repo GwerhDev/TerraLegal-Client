@@ -19,7 +19,7 @@ if (environment === DEVELOPMENT) {
     reducer: {
       login,
     },
-    devTools: environment === PRODUCTION,
+    devTools: environment !== PRODUCTION,
   });
 }
 
