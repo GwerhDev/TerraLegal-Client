@@ -6,7 +6,6 @@ import { DEVELOPMENT, PRODUCTION } from '../../misc';
 let store;
 
 if (environment === DEVELOPMENT) {
-  console.log(environment)
   store = configureStore({
     reducer: {
       login,
@@ -14,7 +13,6 @@ if (environment === DEVELOPMENT) {
     devTools: environment !== PRODUCTION,
   });
 } else {
-  console.log(environment)
   store = configureStore({
     reducer: {
       login,
