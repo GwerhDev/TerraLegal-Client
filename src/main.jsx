@@ -5,11 +5,10 @@ import './styles/root.css';
 import './styles/globals.css';
 
 import App from './App.jsx';
-import store from './app/middlewares/redux/store';
+import store from './middlewares/redux/store';
 
 import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
