@@ -6,7 +6,6 @@ import DashboardPage from "../pages/DashboardPage";
 import AuthPage from "../pages/AuthPage";
 
 export const AppRouter = () => {
-  
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
