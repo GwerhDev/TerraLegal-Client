@@ -5,7 +5,7 @@ export const UserMenu = () => {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/dashboard");
+    navigate("/admin/dashboard");
   }
 
   return (
