@@ -10,10 +10,10 @@ export const Dashboard = () => {
       </span>
       <span className={s.buttonsContainer}>
         <ul>
-          <Link className={s.button} to='/content-create'>
+          <Link className={s.button} to='/admin/content-create'>
             Crear contenido
           </Link>
-          <Link className={s.button} to='/content-list'>
+          <Link className={s.button} to='/admin/content-list'>
             Ver listado de contenido
           </Link>
         </ul>
