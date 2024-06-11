@@ -1,6 +1,7 @@
-import { Presentation } from "../components/Presentation/Presentation";
 import { Header } from "../components/Sections/Header";
+import { Content } from "../components/Content/Content";
 import { Services } from "../components/Services/Services";
+import { Presentation } from "../components/Presentation/Presentation";
 
 export default function LandingPage() {
   return (
@@ -13,6 +14,7 @@ export default function LandingPage() {
           <Presentation />
         </section>
         <section className="services-section">
+          <Content />
           <Services />
         </section>
       </main>
