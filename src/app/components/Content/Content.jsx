@@ -6,7 +6,7 @@ import { ContentCard } from './ContentCard';
 
 export const Content = () => {
   const dispatch = useDispatch();
-  const content = useSelector(state => state.content);
+  const content = useSelector(state => state.content.list);
 
   useEffect(() => {
     dispatch(getContent());

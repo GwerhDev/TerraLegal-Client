@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export const LastContent = () => {
   const dispatch = useDispatch();
-  const content = useSelector(state => state.content);
+  const content = useSelector(state => state.content.lasts);
 
   useEffect(() => {
     dispatch(getLastsContent());
