@@ -31,14 +31,14 @@ export const Login = () => {
   return (
     <div className={s.container}>
       <form>
-        <h1>Login</h1>
+        <h1>Ingresar</h1>
         <ul>
           <label htmlFor="username">Username</label>
-          <input onInput={handleUsername} type="text" name="username" />
+          <input onInput={handleUsername} type="text" name="username" placeholder="Nombre de usuario" />
         </ul>
         <ul>
           <label htmlFor="password">Password</label>
-          <input onInput={handlePassword} type="password" name="password" />
+          <input onInput={handlePassword} type="password" name="password" placeholder="*******" />
         </ul>
         <button onClick={handleLogin}>Login</button>
       </form>

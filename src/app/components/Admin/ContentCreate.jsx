@@ -56,7 +56,7 @@ export const ContentCreate = () => {
         <h1>Crear contenido</h1>
         <span>
           <label htmlFor="title">Título</label>
-          <input onInput={handleTitle} type="text" name='title' placeholder="Título" />
+          <input onInput={handleTitle} type="text" name='title' placeholder="Ingresa un título" />
         </span>
 
         <span>

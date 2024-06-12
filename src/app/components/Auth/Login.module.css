@@ -1,11 +1,14 @@
 .container {
     padding: 5rem;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .container form {
     gap: 1rem;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
