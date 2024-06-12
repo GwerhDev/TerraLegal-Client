@@ -162,3 +162,8 @@ textarea {
   background-color: transparent;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+button:disabled {
+  background-color: #4f4f4f;
+  cursor: not-allowed;
+}

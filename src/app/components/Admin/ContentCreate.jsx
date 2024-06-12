@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import s from './ContentCreate.module.css';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
@@ -6,6 +7,7 @@ import defaultImage from '../../../assets/images/jpg/logo.jpg';
 
 export const ContentCreate = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [title, setTitle] = useState();
   const [published, setPublished] = useState(false);
   const [description, setDescription] = useState();
@@ -35,14 +37,14 @@ export const ContentCreate = () => {
     e.preventDefault();
 
     if (!title || !description || !image) return;
-
     const formData = {
       title,
       published,
       description,
     }
 
-    dispatch(createContent(formData, image));
+    setIsButtonDisabled(true);
+    dispatch(createContent(formData, image, navigate));
   }
 
   useEffect(() => {
@@ -52,29 +54,31 @@ export const ContentCreate = () => {
 
   return (
     <div className={s.container}>
-      <form onSubmit={handleSubmit} className={s.formContainer}>
-        <h1>Crear contenido</h1>
-        <span>
-          <label htmlFor="title">Título</label>
-          <input onInput={handleTitle} type="text" name='title' placeholder="Ingresa un título" />
-        </span>
+      {
+        <form onSubmit={handleSubmit} className={s.formContainer}>
+          <h1>Crear contenido</h1>
+          <span>
+            <label htmlFor="title">Título</label>
+            <input onInput={handleTitle} type="text" name='title' placeholder="Ingresa un título" />
+          </span>
 
-        <span>
-          <label htmlFor="description">Descripción</label>
-          <textarea onInput={handleDescription} placeholder="Ingresa una breve descripción" />
-        </span>
+          <span>
+            <label htmlFor="description">Descripción</label>
+            <textarea onInput={handleDescription} placeholder="Ingresa una breve descripción" />
+          </span>
 
-        <span>
-          <img src={previewImage || defaultImage} alt="preview" width={100} />
-          <input onChange={handleImage} type="file" />
-        </span>
-        <ul>
-          <input onChange={handlePublished} type="checkbox" name="published" />
-          <label htmlFor="published">Publicado</label>
-        </ul>
+          <span>
+            <img src={previewImage || defaultImage} alt="preview" width={100} />
+            <input onChange={handleImage} type="file" />
+          </span>
+          <ul>
+            <input onChange={handlePublished} type="checkbox" name="published" />
+            <label htmlFor="published">Publicado</label>
+          </ul>
 
-        <button disabled={isButtonDisabled}>Crear</button>
-      </form>
+          <button disabled={isButtonDisabled}>Crear</button>
+        </form>
+      }
     </div>
   )
 }
