@@ -1,15 +1,16 @@
 import { useEffect } from 'react';
 import s from './Content.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { getContent } from '../../../middlewares/redux/actions/content.action';
+import { getLastsContent } from '../../../middlewares/redux/actions/content.action';
 import { ContentCard } from './ContentCard';
+import { Link } from 'react-router-dom';
 
 export const Content = () => {
   const dispatch = useDispatch();
   const content = useSelector(state => state.content);
 
   useEffect(() => {
-    dispatch(getContent());
+    dispatch(getLastsContent());
   }, [dispatch]);
 
   return (
@@ -24,6 +25,11 @@ export const Content = () => {
           )
         }
       </ul>
+      <Link to={'/on-sale'} className={s.button}>
+        <button className={s.button}>
+          Ver más
+        </button>
+      </Link>
     </div>
   )
 }

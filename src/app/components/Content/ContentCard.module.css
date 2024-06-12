@@ -17,6 +17,8 @@
   backdrop-filter: blur(10px);
   opacity: 0;
   transition-duration: .4s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .container:hover .dataContainer {
