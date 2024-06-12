@@ -2,11 +2,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 300px;
   display: flex;
+  align-items: flex-end;
   border-radius: 5px;
   cursor: pointer;
-  overflow: hidden;
-  width: 100%;
 }
 
 .dataContainer {
@@ -15,5 +15,12 @@
   color: white;
   background-color: rgba(84, 84, 84, 0.52);
   backdrop-filter: blur(10px);
-  z-index: -1;
+  opacity: 0;
+  transition-duration: .4s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.container:hover .dataContainer {
+  opacity: 1;
 }

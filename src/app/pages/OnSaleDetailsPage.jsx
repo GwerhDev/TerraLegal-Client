@@ -1,7 +1,9 @@
+import { ContentDetails } from "../components/Content/ContentDetails";
+
 const OnSaleDetailsPage = () => {
   return (
-    <div>
-      
+    <div className="page-container">
+      <ContentDetails />
     </div>
   )
 }

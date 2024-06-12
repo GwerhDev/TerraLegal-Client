@@ -1,6 +1,10 @@
+import { Content } from "../components/Content/Content";
+
 const OnSalePage = () => {
   return (
-    <div>OnSalePage</div>
+    <div className="page-container">
+      <Content />
+    </div>
   )
 }
 

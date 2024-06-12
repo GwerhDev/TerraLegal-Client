@@ -8,13 +8,3 @@
   min-height: 100vh;
   padding: 5rem;
 }
-
-.cardsContainer {
-  gap: 1rem;
-  width: 100%;
-  display: flex;
-}
-
-.card {
-  width: 100%;
-}

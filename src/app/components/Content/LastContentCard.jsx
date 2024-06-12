@@ -1,7 +1,7 @@
+import s from './LastContentCard.module.css';
 import { useNavigate } from 'react-router-dom';
-import s from './ContentCard.module.css';
 
-export const ContentCard = (props) => {
+export const LastContentCard = (props) => {
   const { id, title, description, contentGallery } = props || null;
   const navigate = useNavigate();
 
@@ -10,8 +10,7 @@ export const ContentCard = (props) => {
   }
 
   return (
-    <article onClick={handleClick} className={s.container}>
-      <img src={contentGallery ? contentGallery[0] : null} alt="" width="200px"/>
+    <article onClick={handleClick} className={s.container} style={{ backgroundImage: contentGallery ? `url(${contentGallery[0]})` : null }}>
       <span className={s.dataContainer}>
         <h3>{title}</h3>
         <p>{description}</p>
