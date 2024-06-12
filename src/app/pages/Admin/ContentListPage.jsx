@@ -1,8 +1,12 @@
+import { ContentList } from "../../components/Admin/ContentList";
 
 const ContentListPage = () => {
   return (
-    <div>ContentListPage</div>
-  )
+    <div className="page-container">
+      <main>
+        <ContentList />
+      </main>
+    </div>  )
 }
 
 export default ContentListPage

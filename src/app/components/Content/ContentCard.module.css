@@ -1,0 +1,24 @@
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dataContainer {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(84, 84, 84, 0.52);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition-duration: .4s;
+}
+
+.container:hover .dataContainer {
+  opacity: 1;
+}

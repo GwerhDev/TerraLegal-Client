@@ -1,7 +1,12 @@
+import { ContentCreate } from "../../components/Admin/ContentCreate";
 
 const ContentCreatePage = () => {
   return (
-    <div>ContentCreatePage</div>
+    <div className="page-container">
+      <main>
+        <ContentCreate />
+      </main>
+    </div>
   )
 }
 
