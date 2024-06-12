@@ -1,7 +1,7 @@
 import axios from "axios";
 import { URL_API } from "../../config";
 import { options } from "../../helpers";
-import { CONTENT } from "../../misc";
+import { ADMIN_CONTENT } from "../../misc";
 
 export function getContent() {
   return async function (dispatch) {
@@ -9,7 +9,7 @@ export function getContent() {
       const response = await axios.get(`${URL_API}/admin/management-content/`, options());
 
       dispatch({ 
-        type: CONTENT, 
+        type: ADMIN_CONTENT, 
         payload: response.data 
       });
 

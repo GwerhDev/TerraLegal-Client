@@ -5,7 +5,7 @@ import { getContent } from '../../../middlewares/redux/actions/admin.action';
 
 export const ContentList = () => {
   const dispatch = useDispatch();
-  const content = useSelector(state => state.content);
+  const contentList = useSelector(state => state.admin.contentList);
 
   useEffect(() => {
     dispatch(getContent());
@@ -18,9 +18,8 @@ export const ContentList = () => {
       </span>
       <span className={s.buttonsContainer}>
         <ul>
-          <span></span>
           {
-            content?.map((e, index) =>
+            contentList?.map((e, index) =>
               <li key={index} className={s.button}>
                 <span>
                   <p>{e.title}</p>
