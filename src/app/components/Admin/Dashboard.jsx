@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import s from './Dashboard.module.css';
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../../../functions';
 
 export const Dashboard = () => {
   return (
@@ -10,10 +11,10 @@ export const Dashboard = () => {
       </span>
       <span className={s.buttonsContainer}>
         <ul>
-          <Link className={s.button} to='/admin/content-create'>
+          <Link onClick={scrollToTop} className={s.button} to='/admin/content-create'>
             Crear contenido
           </Link>
-          <Link className={s.button} to='/admin/content-list'>
+          <Link onClick={scrollToTop} className={s.button} to='/admin/content-list'>
             Ver listado de contenido
           </Link>
         </ul>

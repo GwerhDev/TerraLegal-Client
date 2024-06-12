@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getLastsContent } from '../../../middlewares/redux/actions/content.action';
 import { LastContentCard } from './LastContentCard';
 import { Link } from 'react-router-dom';
+import { scrollToTop } from '../../../functions';
 
 export const LastContent = () => {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ export const LastContent = () => {
           )
         }
       </ul>
-      <Link to={'/on-sale'} className={s.button}>
+      <Link onClick={scrollToTop} to={'/on-sale'} className={s.button}>
         <button className={s.button}>
           Ver más
         </button>
