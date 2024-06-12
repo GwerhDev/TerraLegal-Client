@@ -1,9 +1,7 @@
 const OnSalePage = () => {
   return (
-    <div>
-      
-    </div>
+    <div>OnSalePage</div>
   )
 }
 
-export default OnSalePage
+export default OnSalePage;

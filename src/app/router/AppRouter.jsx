@@ -7,6 +7,7 @@ import DashboardPage from "../pages/Admin/DashboardPage";
 import ContentListPage from "../pages/Admin/ContentListPage";
 import ContentCreatePage from "../pages/Admin/ContentCreatePage";
 import OnSalePage from "../pages/OnSalePage";
+import OnSaleDetailsPage from "../pages/OnSaleDetailsPage";
 
 export const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ export const AppRouter = () => {
       
       <Route path="/on-sale" element={<OnSalePage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/on-sale/:id" element={<OnSaleDetailsPage />} />
 
       <Route path="/admin/dashboard" element={<DashboardPage />} />
       <Route path="/admin/content-list" element={<ContentListPage />} />
