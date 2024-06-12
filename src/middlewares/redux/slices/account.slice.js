@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { LOGIN, AUTH } from "../../misc";
+import { LOGIN, AUTH, LOGOUT, ACCOUNT } from "../../misc";
 
-export const loginSlice = createSlice({
-  name: LOGIN,
+export const accountSlice = createSlice({
+  name: ACCOUNT,
   initialState: {
     userToken: null,
     currentUser: null,
@@ -23,8 +23,15 @@ export const loginSlice = createSlice({
           currentUser: action.payload,
           logged: true,
         };
+      })
+      .addCase(LOGOUT, (state, action) => {
+        return {
+          ...state,
+          currentUser: action.payload,
+          logged: false,
+        };
       });
   }
 });
 
-export default loginSlice.reducer;
+export default accountSlice.reducer;

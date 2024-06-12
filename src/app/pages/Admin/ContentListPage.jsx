@@ -1,12 +1,11 @@
 import { ContentList } from "../../components/Admin/ContentList";
 
-const ContentListPage = () => {
+export default function ContentListPage() {
   return (
     <div className="page-container">
       <main>
         <ContentList />
       </main>
-    </div>  )
+    </div>
+  )
 }
-
-export default ContentListPage

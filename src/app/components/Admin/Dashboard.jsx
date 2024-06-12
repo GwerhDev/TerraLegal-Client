@@ -1,8 +1,19 @@
 import s from './Dashboard.module.css';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { scrollToTop } from '../../../functions';
+import { logout } from '../../../middlewares/redux/actions/account.action';
+import { useDispatch } from 'react-redux';
 
 export const Dashboard = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  function handleLogout() {
+    dispatch(logout());
+    navigate("/");
+  }
+
   return (
     <div className={s.container}>
       <span className={s.title}>
@@ -17,6 +28,8 @@ export const Dashboard = () => {
           <Link onClick={scrollToTop} className={s.button} to='/admin/content-list'>
             Ver listado de contenido
           </Link>
+          <div className='divider' />
+          <button onClick={handleLogout}>Cerrar Sesión</button>
         </ul>
       </span>
     </div>

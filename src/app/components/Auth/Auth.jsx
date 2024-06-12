@@ -2,7 +2,7 @@ import s from './Auth.module.css';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
-import { auth } from '../../../middlewares/redux/actions/login.action';
+import { auth } from '../../../middlewares/redux/actions/account.action';
 
 export const Auth = () => {
   const dispatch = useDispatch();

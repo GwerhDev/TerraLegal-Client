@@ -5,7 +5,7 @@ import { UserMenu } from "./UserMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getUserToken } from "../../../middlewares/helpers";
-import { auth } from "../../../middlewares/redux/actions/login.action";
+import { auth } from "../../../middlewares/redux/actions/account.action";
 
 export const Navigator = () => {
   const dispatch = useDispatch();

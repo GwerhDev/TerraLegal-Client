@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
 import s from './ContentCreate.module.css';
-import defaultImage from '../../../assets/images/jpg/logo.jpg';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createContent } from '../../../middlewares/redux/actions/admin.action';
+import defaultImage from '../../../assets/images/jpg/logo.jpg';
 
 export const ContentCreate = () => {
   const dispatch = useDispatch();

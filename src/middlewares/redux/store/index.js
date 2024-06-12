@@ -1,15 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { environment } from '../../../environment';
 import { DEVELOPMENT } from '../../misc';
-import loginSlice from '../slices/login.slice';
-import contentSlice from '../slices/content.slice';
 import adminSlice from '../slices/admin.slice';
+import accountSlice from '../slices/account.slice';
+import contentSlice from '../slices/content.slice';
 
 let store;
 
 const reducer = {
   admin: adminSlice,
-  account: loginSlice,
+  account: accountSlice,
   content: contentSlice,
 }
 

@@ -1,6 +1,6 @@
 import s from "./Login.module.css";
 import { useDispatch } from "react-redux";
-import { login } from "../../../middlewares/redux/actions/login.action";
+import { login } from "../../../middlewares/redux/actions/account.action";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -32,10 +32,14 @@ export const Login = () => {
     <div className={s.container}>
       <form>
         <h1>Login</h1>
-        <label htmlFor="username">Username</label>
-        <input onInput={handleUsername} type="text" name="username" />
-        <label htmlFor="password">Password</label>
-        <input onInput={handlePassword} type="password" name="password" />
+        <ul>
+          <label htmlFor="username">Username</label>
+          <input onInput={handleUsername} type="text" name="username" />
+        </ul>
+        <ul>
+          <label htmlFor="password">Password</label>
+          <input onInput={handlePassword} type="password" name="password" />
+        </ul>
         <button onClick={handleLogin}>Login</button>
       </form>
     </div>
