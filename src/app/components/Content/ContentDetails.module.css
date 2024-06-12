@@ -16,3 +16,7 @@
   text-align: left;
   width: 100%;
 }
+
+.galleryImage {
+  max-width: 1440px;
+}

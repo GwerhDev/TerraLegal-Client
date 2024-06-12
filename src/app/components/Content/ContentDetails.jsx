@@ -16,7 +16,7 @@ export const ContentDetails = () => {
 
   return (
     <div className={s.container}>
-      <img src={contentDetails?.contentGallery ? contentDetails.contentGallery[0] : null} alt="" width="100%" />
+      <img className={s.galleryImage} src={contentDetails?.contentGallery ? contentDetails.contentGallery[0] : null} alt="" width="100%" />
       <span className={s.detailsContainer}>
         <h2>{contentDetails?.title}</h2>
         <p>{contentDetails?.description}</p>

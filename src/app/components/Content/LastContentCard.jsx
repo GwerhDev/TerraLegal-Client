@@ -1,3 +1,4 @@
+import { scrollToTop } from '../../../functions';
 import s from './LastContentCard.module.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,6 +8,7 @@ export const LastContentCard = (props) => {
 
   const handleClick = () => {
     navigate(`/on-sale/${id}`);
+    scrollToTop();
   }
 
   return (
