@@ -19,7 +19,7 @@ export const contentSlice = createSlice({
       .addCase(SET_UPDATING_STATE, (state, action) => {
         return {
           ...state,
-          contentList: action.payload,
+          updating: action.payload,
         };
       })
   }
