@@ -94,7 +94,9 @@ export const ContentCreate = () => {
             <button disabled={isButtonDisabled}>Crear</button>
           </form>
           :
-          <h1>Creando contenido...</h1>
+          <div className={s.loader}>
+            <h1>Creando contenido...</h1>
+          </div>
       }
     </div>
   )
