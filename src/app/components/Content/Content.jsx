@@ -16,13 +16,13 @@ export const Content = () => {
     <div className={s.container}>
       <span className={s.titleContainer}>
         <h1>Propiedades en venta</h1>
-        <p>Nuestros terrenos son la mejor opción.</p>
+        <p>Tu mejor opción.</p>
       </span>
       <ul className={s.cardsContainer}>
         {
           content?.map((e, index) =>
             <div key={index} className={s.card}>
-              <ContentCard id={e._id} title={e.title} description={e.description} contentGallery={e.contentGallery} />
+              <ContentCard id={e._id} title={e.title} price={e.price} contentGallery={e.contentGallery} />
             </div>
           )
         }

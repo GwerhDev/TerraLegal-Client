@@ -21,7 +21,7 @@ export const LastContent = () => {
         {
           content?.map((e, index) =>
             <div key={index} className={s.card}>
-              <LastContentCard id={e._id} title={e.title} description={e.description} contentGallery={e.contentGallery} />
+              <LastContentCard id={e._id} title={e.title} price={e.price} contentGallery={e.contentGallery} />
             </div>
           )
         }

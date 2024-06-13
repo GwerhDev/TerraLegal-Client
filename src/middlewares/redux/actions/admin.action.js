@@ -2,9 +2,9 @@ import axios from "axios";
 import { URL_API } from "../../config";
 import { options } from "../../helpers";
 import { ADMIN_CONTENT, SET_UPDATING_STATE } from "../../misc";
-import { getLastsContent } from "./content.action";
+import { getContent, getLastsContent } from "./content.action";
 
-export function getContent() {
+export function getAllContent() {
   return async function (dispatch) {
     try {
       const response = await axios.get(`${URL_API}/admin/management-content/`, options());
@@ -47,6 +47,21 @@ export function createContent(formData, file, navigate) {
       
       navigate(`/admin/dashboard`);
       dispatch(setUpdatingState(false));
+
+    } catch (error) {
+      console.error(error);
+    }
+  }
+}
+
+export function deleteContent(id) {
+  return async function (dispatch) {
+    try {
+      await axios.delete(`${URL_API}/admin/management-content/delete/${id}`, options());
+
+      dispatch(getContent());
+      dispatch(getAllContent());
+      dispatch(getLastsContent());
 
     } catch (error) {
       console.error(error);

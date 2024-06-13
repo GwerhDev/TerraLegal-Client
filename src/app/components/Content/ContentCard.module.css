@@ -4,7 +4,6 @@
   max-width: 1440px;
   border-radius: 5px;
   display: flex;
-  cursor: pointer;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,15 +20,46 @@
 .image {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  cursor: pointer;
 }
 
 .dataContainer {
   width: 100%;
-  z-index: -1;
   padding: 1rem;
   color: white;
-  background-color: rgba(84, 84, 84, 0.52);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--color-dark-800);
   backdrop-filter: blur(10px);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.button {
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--color-dark-300);
+}
+
+.actions {
+  gap: 1rem;
+  display: flex;
+}
+
+.confirmDelete {
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.action {
+  cursor: pointer;
 }
