@@ -9,6 +9,12 @@
   flex-direction: column;
 }
 
+.titleContainer {
+  padding-left: var(--p-responsive);
+  padding-right: var(--p-responsive);
+  text-align: center;
+}
+
 .cardsContainer {
   gap: 1rem;
   width: 100%;

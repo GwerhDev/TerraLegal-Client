@@ -14,7 +14,10 @@ export const Content = () => {
 
   return (
     <div className={s.container}>
-      <h2>Propiedades en venta</h2>
+      <span className={s.titleContainer}>
+        <h1>Propiedades en venta</h1>
+        <p>Nuestros terrenos son la mejor opción.</p>
+      </span>
       <ul className={s.cardsContainer}>
         {
           content?.map((e, index) =>
