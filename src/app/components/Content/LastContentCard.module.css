@@ -13,12 +13,12 @@
   width: 100%;
   padding: 1rem;
   color: white;
-  background-color: rgba(84, 84, 84, 0.52);
-  backdrop-filter: blur(10px);
   opacity: 0;
   transition-duration: .4s;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(84, 84, 84, 0.52);
 }
 
 .container:hover .dataContainer {
@@ -29,5 +29,6 @@
   .dataContainer {
     background-color: rgb(84, 84, 84);
     opacity: 1;
+    z-index: 0;
   }
 }

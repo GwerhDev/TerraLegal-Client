@@ -77,6 +77,7 @@ nav {
   position: fixed;
   background-color: #fefefe;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.239);
+  z-index: 99;
 }
 
 header {
