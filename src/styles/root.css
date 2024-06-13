@@ -21,6 +21,8 @@
   --color-primary: #242424;
 
   --color-light-100: white;
+  --color-app-white: #f1f1f1;
+  --color-app-white-transparent: #f1f1f1d4;
 
   --color-dark-100: black;
   --color-dark-200: rgb(16, 16, 16);
