@@ -74,7 +74,7 @@ export const ContentCreate = () => {
 
             <span>
               <label htmlFor="price">Precio (UF)</label>
-              <input onInput={handlePrice} type="number" min="0" name='price' placeholder="3.000" />
+              <input onInput={handlePrice} type="number" min="0" name='price' placeholder="3000" />
             </span>
 
             <span>
