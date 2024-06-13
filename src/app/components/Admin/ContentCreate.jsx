@@ -11,9 +11,9 @@ export const ContentCreate = () => {
   const [title, setTitle] = useState();
   const [image, setImage] = useState();
   const [price, setPrice] = useState();
-  const [published, setPublished] = useState(false);
   const [description, setDescription] = useState();
   const [previewImage, setPreviewImage] = useState();
+  const [published, setPublished] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
   const updating = useSelector(state => state.admin.updating)
@@ -56,9 +56,9 @@ export const ContentCreate = () => {
   }
 
   useEffect(() => {
-    if (title && image && description) setIsButtonDisabled(false);
+    if (price, title && image && description) setIsButtonDisabled(false);
     else setIsButtonDisabled(true);
-  }, [title, image, description]);
+  }, [title, image, description, price]);
 
   return (
     <div className={s.container}>
