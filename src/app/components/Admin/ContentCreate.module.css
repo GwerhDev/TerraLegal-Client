@@ -1,10 +1,11 @@
 .formContainer {
   gap: 1rem;
-  padding-top: 8rem;
   min-height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .formContainer span {

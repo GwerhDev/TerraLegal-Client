@@ -33,7 +33,7 @@ export function createContent(formData, file, navigate) {
 
       const response = await axios.post(
         `${URL_API}/admin/management-content/create`,
-        { title: formData.title, description: formData.description, published: formData.published, fileData },
+        { price: formData.price, title: formData.title, description: formData.description, published: formData.published, fileData },
         options()
       );
 
