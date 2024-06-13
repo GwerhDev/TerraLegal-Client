@@ -42,11 +42,11 @@ export const ContentCard = (props) => {
                 <img className={s.action} src={mailIcon} alt="" height="30px" />
                 <img className={s.action} src={phoneIcon} alt="" height="30px" />
                 {
-                  currentUser.role === 'admin' &&
+                  currentUser?.role === 'admin' &&
                   <img className={s.action} src={editIcon} alt="" height="28px" />
                 }
                 {
-                  currentUser.role === 'admin' &&
+                  currentUser?.role === 'admin' &&
                   <img className={s.action} onClick={() => setConfirmDelete(true)} src={deleteIcon} alt="" height="30px" />
                 }
               </span>
@@ -57,7 +57,7 @@ export const ContentCard = (props) => {
             :
             <span className={s.dataContainer}>
               {
-                currentUser.role === 'admin' &&
+                currentUser?.role === 'admin' &&
                 <ul className={s.confirmDelete}>
                   <p className={s.admin}>¿Eliminar {'"' + title + '"'}?</p>
                   <button onClick={handleDelete}>Sí</button>
