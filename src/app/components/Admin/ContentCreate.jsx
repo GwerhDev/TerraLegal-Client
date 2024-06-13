@@ -9,9 +9,10 @@ export const ContentCreate = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [title, setTitle] = useState();
+  const [image, setImage] = useState();
+  const [price, setPrice] = useState();
   const [published, setPublished] = useState(false);
   const [description, setDescription] = useState();
-  const [image, setImage] = useState();
   const [previewImage, setPreviewImage] = useState();
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
@@ -19,6 +20,10 @@ export const ContentCreate = () => {
 
   const handleTitle = (e) => {
     setTitle(e.target.value);
+  }
+
+  const handlePrice = (e) => {
+    setPrice(e.target.value);
   }
 
   const handleDescription = (e) => {
@@ -38,9 +43,10 @@ export const ContentCreate = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!title || !description || !image) return;
+    if (!title || !description || !image || !price) return;
 
     const formData = {
+      price,
       title,
       published,
       description,
@@ -64,6 +70,11 @@ export const ContentCreate = () => {
             <span>
               <label htmlFor="title">Título</label>
               <input onInput={handleTitle} type="text" name='title' placeholder="Ingresa un título" />
+            </span>
+
+            <span>
+              <label htmlFor="price">Precio (UF)</label>
+              <input onInput={handlePrice} type="number" min="0" name='price' placeholder="3.000" />
             </span>
 
             <span>

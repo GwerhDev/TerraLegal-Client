@@ -2,4 +2,6 @@
   width: 100%;
   max-width: 1440px;
   padding: 5rem;
+  padding-left: var(--p-responsive);
+  padding-right: var(--p-responsive);
 }

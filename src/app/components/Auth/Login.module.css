@@ -1,5 +1,7 @@
 .container {
     padding: 5rem;
+    padding-left: var(--p-responsive);
+    padding-right: var(--p-responsive);  
     min-height: 100vh;
     display: flex;
     justify-content: center;

@@ -29,6 +29,8 @@
   --color-dark-500: rgb(60, 60, 60);
   --color-dark-600: rgb(72, 72, 72);
 
+  --p-responsive: 5rem;
+
 }
 
 a {
@@ -166,4 +168,10 @@ textarea {
 button:disabled {
   background-color: #4f4f4f;
   cursor: not-allowed;
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --p-responsive: 2rem;
+  }
 }
