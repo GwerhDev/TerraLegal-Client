@@ -27,6 +27,7 @@
 
 @media only screen and (max-width: 800px) {
   .dataContainer {
+    background-color: rgb(84, 84, 84);
     opacity: 1;
   }
 }
