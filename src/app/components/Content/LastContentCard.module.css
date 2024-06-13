@@ -24,3 +24,9 @@
 .container:hover .dataContainer {
   opacity: 1;
 }
+
+@media only screen and (max-width: 800px) {
+  .dataContainer {
+    opacity: 1;
+  }
+}
