@@ -26,6 +26,10 @@
   flex-direction: column;
 }
 
+.contact-page {
+  background-color: white;
+}
+
 .presentation-section {
   width: 100%;
 }
@@ -33,4 +37,12 @@
 .services-section {
   width: 100%;
   background-color: rgb(221, 221, 221);
+}
+
+.no-margin {
+  margin: 0;
+} 
+
+.no-pading {
+  padding: 0;
 }
