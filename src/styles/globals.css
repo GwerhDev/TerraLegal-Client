@@ -20,6 +20,7 @@
 
 .page-container {
   width: 100vw;
+  padding-top: 5rem;
   display: flex;
   align-items: center;
   flex-direction: column;

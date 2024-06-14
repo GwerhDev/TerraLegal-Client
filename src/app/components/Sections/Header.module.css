@@ -5,13 +5,14 @@
 
 .leftSection {
   width: 100%;
-  padding-top: 6rem;
+  padding-top: 1rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
 .headerTitle {
+  display: flex;
   border-radius: 5px;
   padding-left: var(--p-responsive);
   padding-right: var(--p-responsive);

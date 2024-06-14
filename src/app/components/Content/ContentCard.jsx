@@ -1,13 +1,13 @@
 import s from './ContentCard.module.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { scrollToTop } from '../../../functions';
-import editIcon from '../../../assets/images/svg/edit-icon.svg';
-import mailIcon from '../../../assets/images/svg/mail-icon.svg';
-import phoneIcon from '../../../assets/images/svg/phone-icon.svg';
-import deleteIcon from '../../../assets/images/svg/delete-icon.svg';
-import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { deleteContent } from '../../../middlewares/redux/actions/admin.action';
+import editIcon from '../../../assets/images/svg/white/edit-icon.svg';
+import mailIcon from '../../../assets/images/svg/white/mail-icon.svg';
+import phoneIcon from '../../../assets/images/svg/white/phone-icon.svg';
+import deleteIcon from '../../../assets/images/svg/white/delete-icon.svg';
 
 export const ContentCard = (props) => {
   const dispatch = useDispatch();

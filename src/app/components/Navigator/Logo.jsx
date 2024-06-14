@@ -1,5 +1,5 @@
 import s from './Logo.module.css';
-import logo from '../../../assets/images/svg/logo.svg';
+import logo from '../../../assets/images/svg/black/logo.svg';
 import { Link } from 'react-router-dom';
 import { scrollToTop } from '../../../functions';
 

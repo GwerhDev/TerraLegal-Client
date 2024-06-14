@@ -1,10 +1,10 @@
 .container {
   gap: 1rem;
   padding: 5rem;
+  padding-top: 1rem;
   padding-left: var(--p-responsive);
   padding-right: var(--p-responsive);
   min-height: 100vh;
-  padding-top: 6rem;
   display: flex;
   align-items: center;
   flex-direction: column;
