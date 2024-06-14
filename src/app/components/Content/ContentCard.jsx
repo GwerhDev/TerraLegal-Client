@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { scrollToTop } from '../../../functions';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContent } from '../../../middlewares/redux/actions/admin.action';
-import editIcon from '../../../assets/images/svg/white/edit-icon.svg';
-import mailIcon from '../../../assets/images/svg/white/mail-icon.svg';
+/* import editIcon from '../../../assets/images/svg/white/edit-icon.svg';
+ */import mailIcon from '../../../assets/images/svg/white/mail-icon.svg';
 import phoneIcon from '../../../assets/images/svg/white/phone-icon.svg';
 import deleteIcon from '../../../assets/images/svg/white/delete-icon.svg';
 
@@ -41,10 +41,10 @@ export const ContentCard = (props) => {
               <span className={s.actions}>
                 <img className={s.action} src={mailIcon} alt="" height="30px" />
                 <img className={s.action} src={phoneIcon} alt="" height="30px" />
-                {
+                {/*                 {
                   currentUser?.role === 'admin' &&
                   <img className={s.action} src={editIcon} alt="" height="28px" />
-                }
+                } */}
                 {
                   currentUser?.role === 'admin' &&
                   <img className={s.action} onClick={() => setConfirmDelete(true)} src={deleteIcon} alt="" height="30px" />
