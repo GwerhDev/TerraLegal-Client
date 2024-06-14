@@ -36,6 +36,14 @@
   border-bottom-right-radius: 5px;
 }
 
+.dataContainer a {
+  color: var(--color-app-white);
+}
+
+.dataContainer a:hover {
+  color: rgb(202, 202, 202);
+}
+
 .button {
   min-width: 100px;
   display: flex;
