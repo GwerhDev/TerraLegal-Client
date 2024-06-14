@@ -7,8 +7,11 @@ export const Header = () => {
       <section className={s.container}>
         <span className={s.leftSection}>
           <span className={s.headerTitle}>
-            <img src={logo} alt="" width={"100px"}/>
-            <h1>TerraLegal</h1>
+            <img src={logo} alt="" width={"100px"} />
+            <ul className={s.logoText}>
+              <h1>TerraLegal</h1>
+              <p>Soluciones SpA</p>
+            </ul>
           </span>
         </span>
         <span className={s.rightSection}>
